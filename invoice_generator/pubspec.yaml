@@ -1,0 +1,78 @@
+name: invoice_generator
+description: "A production-ready offline invoice/bill generator built with Flutter."
+publish_to: 'none'
+version: 1.0.0+1
+ 
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+ 
+dependencies:
+  flutter:
+    sdk: flutter
+ 
+  # ----------------------------
+  # State Management
+  # ----------------------------
+  flutter_riverpod: ^2.5.1
+ 
+  # ----------------------------
+  # Offline Database
+  # ----------------------------
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+ 
+  # ----------------------------
+  # PDF Generation & Printing
+  # ----------------------------
+  pdf: ^3.11.1
+  printing: ^5.13.3
+ 
+  # ----------------------------
+  # Sharing
+  # ----------------------------
+  share_plus: ^10.1.2
+ 
+  # ----------------------------
+  # Image Handling
+  # ----------------------------
+  image_picker: ^1.1.2
+ 
+  # ----------------------------
+  # Formatting (currency, dates)
+  # ----------------------------
+  intl: ^0.19.0
+ 
+  # ----------------------------
+  # Fonts
+  # ----------------------------
+  google_fonts: ^6.2.1
+ 
+  # ----------------------------
+  # Utilities
+  # ----------------------------
+  uuid: ^4.5.1                  # Unique IDs for invoices/items
+  path_provider: ^2.1.5         # File system paths for saving PDFs
+  cupertino_icons: ^1.0.8
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+ 
+  # ----------------------------
+  # Hive Code Generation
+  # ----------------------------
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.13
+ 
+  # ----------------------------
+  # Linting
+  # ----------------------------
+  flutter_lints: ^5.0.0
+ 
+flutter:
+  uses-material-design: true
+ 
+  assets:
+    - assets/images/
+ 
